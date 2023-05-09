@@ -2,14 +2,13 @@ package com.example.moneywiseu
 
 import android.content.Intent
 import android.os.Build.VERSION_CODES.R
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import android.R
+
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var Btnlogin : Button
