@@ -1,18 +1,22 @@
 package com.example.moneywiseu
 
 import android.content.Intent
+import android.os.Build.VERSION_CODES.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import android.R
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var Btnlogin : Button
     private lateinit var BtnRegister : Button
-    private lateinit var EdtEmail : TextView
-    private lateinit var EdtPassword : TextView
-    lateinit var auth:FirebaseAuth
+    private lateinit var EdtEmail : EditText
+    private lateinit var EdtPassword : EditText
+    lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -20,8 +24,7 @@ class LoginActivity : AppCompatActivity() {
         BtnRegister = findViewById(R.id.btnregister)
         EdtEmail = findViewById(R.id.edtemail)
         EdtPassword = findViewById(R.id.edtpassword)
-
-        auth= FireBaseAuth.getInstance()
+        auth= FirebaseAuth.getInstance()
         BtnRegister.setOnClickListener {
             var gotoreg = Intent(this,RegisterActivity::class.java)
             startActivity(gotoreg)
