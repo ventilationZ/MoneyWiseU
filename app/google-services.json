@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "848201650973",
+    "project_id": "moneywiseu-cadae",
+    "storage_bucket": "moneywiseu-cadae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848201650973:android:4ef00f601f8b9a117f47f4",
+        "android_client_info": {
+          "package_name": "com.example.moneywiseu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848201650973-m9vp305dk78fjcircn6b4kfg7tsaj7m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0M5jh8B2YOUKEffS3Xr8RZ9NllVBZxWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848201650973-m9vp305dk78fjcircn6b4kfg7tsaj7m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
