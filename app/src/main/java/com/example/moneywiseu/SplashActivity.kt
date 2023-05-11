@@ -13,5 +13,10 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         BtnloginIntro = findViewById(R.id.btnloginintro)
         BtnRegisterIntro = findViewById(R.id.btnregisterintro)
+
+        BtnloginIntro.setOnClickListener {
+
+        }
+
     }
 }

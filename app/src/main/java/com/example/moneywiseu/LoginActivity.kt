@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-
 class LoginActivity : AppCompatActivity() {
     private lateinit var Btnlogin : Button
     private lateinit var BtnRegister : Button
@@ -18,12 +17,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        Btnlogin = findViewById(R.id.btnlogin)
-        BtnRegister = findViewById(R.id.btnregister)
-        EdtEmail = findViewById(R.id.edtemail)
-        EdtPassword = findViewById(R.id.edtpassword)
-        auth= FirebaseAuth.getInstance()
+
         BtnRegister.setOnClickListener {
             var gotoreg = Intent(this,RegisterActivity::class.java)
             startActivity(gotoreg)
